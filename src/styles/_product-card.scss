@@ -8,7 +8,7 @@
   border-radius: 5px;
   transition: 0.3s ease;
 
-  @include hoverEffect(box-shadow, #{$box-shadow});
+  @include hoverTransition(box-shadow, $box-shadow);
 
   &__image-wrap {
     width: 166px;
@@ -18,7 +18,7 @@
     border: 3px solid transparent;
     border-radius: 5px 5px 0 0;
 
-    @include hoverButton(transform, scale(1.2), border-color, $border-color);
+    @include hoverEffect(transform, scale(1.2), border-color, $border-color);
   }
 
   &__image {

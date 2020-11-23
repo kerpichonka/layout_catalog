@@ -13,5 +13,6 @@
   border: 1px solid $main-color;
   border-radius: 5px;
 
-  @include hoverButton(background-color, $button-collor, color, $main-color);
+  @include hoverEffect(background-color, $button-collor, color, $main-color);
+
 }
