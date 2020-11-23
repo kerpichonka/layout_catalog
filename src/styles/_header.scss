@@ -7,6 +7,10 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   background-color: #fff;
 
+  @media (min-width: 1280px) {
+    padding: 0 calc(50% - (1024px / 2 ));
+  }
+
   &__logo {
     margin-right: 40px;
   }
