@@ -8,15 +8,10 @@
   line-height: 16px;
   font-weight: 700;
   text-transform: uppercase;
-  color: white;
+  color: $button-collor;
   background-color: $main-color;
   border: 1px solid $main-color;
   border-radius: 5px;
-  transition: all 0.3s ease;
 
-  &:hover {
-    background-color: #fff;
-    color: $main-color;
-
-  }
+  @include hoverButton(background-color, $button-collor, color, $main-color);
 }

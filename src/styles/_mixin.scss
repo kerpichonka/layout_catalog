@@ -1,0 +1,14 @@
+@mixin hoverEffect($_property, $_toValue) {
+  transition: $_property 1s;
+  &:hover {
+    #{$_property}: $_toValue;
+  }
+}
+
+@mixin hoverButton ($_property, $_toValue, $_property_2, $_toValue_2) {
+  transition: #{$_property} 1s, #{$_property_2} 1s;
+  &:hover {
+    #{$_property}: $_toValue;
+    #{$_property_2}: $_toValue_2;
+  }
+}
